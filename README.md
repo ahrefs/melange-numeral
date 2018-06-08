@@ -39,3 +39,7 @@ myValue
 # Docs
 
 Check [Numeral documentation](http://numeraljs.com/)
+
+# Alternatives
+
+- [drwlrsn/bs-numeral](https://github.com/drwlrsn/bs-numeral)
