@@ -1,0 +1,21 @@
+{
+  "name": "@ahrefs/bs-numeral",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
+  },
+  "keywords": [
+    "numeral",
+    "BuckleScript"
+  ],
+  "author": "ahrefs",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^3.1.5"
+  },
+  "dependencies": {
+    "numeral": "2.0.6"
+  }
+}
