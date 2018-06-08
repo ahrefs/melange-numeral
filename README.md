@@ -1,4 +1,4 @@
-# bs-recharts
+# bs-numeral
 
 This is [Bucklescript](https://bucklescript.github.io/) bindings for [numeral](http://numeraljs.com/).
 🚧 It is not completed, we are adding bindings as we go. Doesn't follow semver at this point. 🚧
@@ -11,7 +11,7 @@ yarn add @ahrefs/bs-numeral
 
 # Setup
 
-Add bs-recharts to bs-depenencies in your bs-config. bs!
+Add `bs-numeral` to `bs-depenencies` in your `bsconfig.json`!
 
 ```js
 {
