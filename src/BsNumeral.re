@@ -12,6 +12,7 @@ external make :
 [@bs.module] external makeEmpty : unit => t = "numeral";
 
 [@bs.send] external value : t => Js.nullable(float) = "value";
+
 let value = n => n |. value |. Js.toOption;
 
 [@bs.send] external format : (t, ~format: string=?, unit) => string = "format";
@@ -22,12 +23,14 @@ let value = n => n |. value |. Js.toOption;
 external addMutable :
   (t, [@bs.unwrap] [ | `Str(string) | `Int(int) | `Float(float)]) => t =
   "add";
+
 let add = (numeral, value) => numeral |. clone |. addMutable(value);
 
 [@bs.send]
 external subtractMutable :
   (t, [@bs.unwrap] [ | `Str(string) | `Int(int) | `Float(float)]) => t =
   "subtract";
+
 let subtract = (numeral, value) =>
   numeral |. clone |. subtractMutable(value);
 
@@ -35,6 +38,7 @@ let subtract = (numeral, value) =>
 external multiplyMutable :
   (t, [@bs.unwrap] [ | `Str(string) | `Int(int) | `Float(float)]) => t =
   "multiply";
+
 let multiply = (numeral, value) =>
   numeral |. clone |. multiplyMutable(value);
 
@@ -42,6 +46,7 @@ let multiply = (numeral, value) =>
 external divideMutable :
   (t, [@bs.unwrap] [ | `Str(string) | `Int(int) | `Float(float)]) => t =
   "divide";
+
 let divide = (numeral, value) => numeral |. clone |. divideMutable(value);
 
 [@bs.send]
