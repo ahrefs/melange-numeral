@@ -3,7 +3,10 @@
   "version": "0.1.2",
   "description": "Bucklescript bindings for Numeral",
   "homepage": "https://github.com/ahrefs/bs-numeral#readme",
-  "repository": "git@github.com:ahrefs/bs-numeral.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ahrefs/bs-numeral.git"
+  },
   "bugs": {
     "url": "https://github.com/ahrefs/bs-numeral/issues"
   },
