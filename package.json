@@ -1,17 +1,23 @@
 {
   "name": "@ahrefs/bs-numeral",
   "version": "0.1.2",
+  "description": "Bucklescript bindings for Numeral",
+  "homepage": "https://github.com/ahrefs/bs-numeral#readme",
+  "repository": "git@github.com:ahrefs/bs-numeral.git",
+  "bugs": {
+    "url": "https://github.com/ahrefs/bs-numeral/issues"
+  },
+  "author": "ahrefs",
+  "license": "MIT",
+  "keywords": [
+    "numeral",
+    "BuckleScript"
+  ],
   "scripts": {
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w"
   },
-  "keywords": [
-    "numeral",
-    "BuckleScript"
-  ],
-  "author": "ahrefs",
-  "license": "MIT",
   "devDependencies": {
     "bs-platform": "^4.0.4"
   },
