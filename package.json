@@ -1,6 +1,6 @@
 {
   "name": "@ahrefs/bs-numeral",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Bucklescript bindings for Numeral",
   "homepage": "https://github.com/ahrefs/bs-numeral#readme",
   "repository": {
