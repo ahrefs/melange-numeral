@@ -1,15 +1,15 @@
 type t;
 
-[@bs.module]
+[@bs.module "numeral"]
 external make:
   (
   [@bs.unwrap]
   [ | `Str(string) | `Int(int) | `Float(float) | `Numeral(t)]
   ) =>
   t =
-  "numeral";
+  "default";
 
-[@bs.module] external makeEmpty: unit => t = "numeral";
+[@bs.module "numeral"] external makeEmpty: unit => t = "default";
 
 [@bs.send] external value: t => Js.nullable(float) = "value";
 
