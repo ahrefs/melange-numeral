@@ -1,0 +1,38 @@
+opam-version: "2.0"
+synopsis: "Melange bindings for Numeral"
+description: "Melange bindings for the Numeral JavaScript library."
+maintainer: [
+  "Liubomyr Mykhalchenko <liubomyr.mykhalchenko@ahrefs.com>"
+  "Denis Strelkov <denis.strelkov@ahrefs.com>"
+]
+authors: [
+  "Liubomyr Mykhalchenko <liubomyr.mykhalchenko@ahrefs.com>"
+  "Denis Strelkov <denis.strelkov@ahrefs.com>"
+]
+license: "MIT"
+homepage: "https://github.com/ahrefs/melange-numeral/"
+doc: "https://github.com/ahrefs/melange-numeral/"
+bug-reports: "https://github.com/ahrefs/melange-numeral/issues"
+depends: [
+  "dune" {>= "3.8"}
+  "ocaml" {>= "4.14.0"}
+  "melange" {>= "1.0.0"}
+  "reason" {>= "3.8.2"}
+  "ocaml-lsp-server" {with-test}
+  "odoc" {with-doc}
+]
+build: [
+  ["dune" "subst"] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+]
+dev-repo: "git+https://github.com/ahrefs/melange-numeral.git"

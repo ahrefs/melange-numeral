@@ -1,32 +1,40 @@
-# bs-numeral
+# melange-numeral
 
-This is [Bucklescript](https://bucklescript.github.io/) bindings for [numeral](http://numeraljs.com/).
+These are the [Melange](https://melange.re/) bindings for [numeral](http://numeraljs.com/).
 🚧 It is not completed, we are adding bindings as we go. Doesn't follow semver at this point. 🚧
 
-# Install, [npm](https://www.npmjs.com/package/@ahrefs/bs-numeral)
+# Install
+
+Install [opam](https://opam.ocaml.org/) package manager.
+
+Then:
 
 ```
-yarn add @ahrefs/bs-numeral
+opam pin add melange-numeral.dev git+https://github.com/ahrefs/melange-numeral.git#master
+```
+
+The bindings support the version 2.0.6 of `numeral` npm package, which should be installed separately:
+
+```
+  "dependencies": {
+    "numeral": "2.0.6"
+  }
 ```
 
 # Setup
 
-Add `bs-numeral` to `bs-depenencies` in your `bsconfig.json`!
+Add `melange-numeral` to the `libraries` in your `dune` file:
 
-```js
-{
-  /* ... */
-  "bs-dependencies": [
-    "@ahrefs/bs-numeral"
-  ],
-  /* ... */
-}
+```dune
+; ...
+  (libraries melange-numeral)
+; ...
 ```
 
 # Usage Example
 
 ```re
-module N = BsNumeral;
+module N = Numeral;
 
 let myValue = N.make(`Str("11110.49"));
 myValue

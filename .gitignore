@@ -4,3 +4,5 @@ lib/bs
 .merlin
 .bsb.lock
 *.bs.js
+_build
+_opam
