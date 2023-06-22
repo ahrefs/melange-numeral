@@ -1,0 +1,4 @@
+(library
+ (name numeral)
+ (public_name melange-numeral)
+ (modes melange))
