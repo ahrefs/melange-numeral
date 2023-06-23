@@ -1,3 +1,4 @@
 (melange.emit
  (target tests)
- (libraries numeral))
+ (libraries numeral)
+ (preprocess (pps melange.ppx)))
