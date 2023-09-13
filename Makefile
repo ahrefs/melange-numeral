@@ -26,11 +26,11 @@ install: ## Install development dependencies
 
 .PHONY: build
 build: ## Build the project
-	$(DUNE) build @melange
+	$(DUNE) build
 
 .PHONY: build_verbose
 build_verbose: ## Build the project
-	$(DUNE) build --verbose @melange
+	$(DUNE) build --verbose
 
 .PHONY: clean
 clean: ## Clean build artifacts and other generated files
