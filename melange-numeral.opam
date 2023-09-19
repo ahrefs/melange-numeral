@@ -12,7 +12,6 @@ authors: [
 license: "MIT"
 tags: ["melange" "org:ahrefs"]
 homepage: "https://github.com/ahrefs/melange-numeral/"
-doc: "https://github.com/ahrefs/melange-numeral/"
 bug-reports: "https://github.com/ahrefs/melange-numeral/issues"
 depends: [
   "ocaml"
