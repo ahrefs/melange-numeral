@@ -15,10 +15,10 @@ homepage: "https://github.com/ahrefs/melange-numeral/"
 doc: "https://github.com/ahrefs/melange-numeral/"
 bug-reports: "https://github.com/ahrefs/melange-numeral/issues"
 depends: [
-  "dune" {>= "3.8"}
   "ocaml"
+  "dune" {>= "3.8"}
   "melange" {>= "2.0.0"}
-  "reason" {>= "3.8.2"}
+  "reason" {>= "3.10.0"}
   "opam-check-npm-deps" {with-test} # todo: use with-dev-setup once opam 2.2 is out
   "ocaml-lsp-server" {with-test}
   "odoc" {with-doc}
@@ -40,8 +40,4 @@ build: [
 dev-repo: "git+https://github.com/ahrefs/melange-numeral.git"
 depexts: [
   ["numeral"] {npm-version = "2.0.6"}
-]
-pin-depends: [
-  [ "melange.2.0.0"         "git+https://github.com/melange-re/melange.git#e114ad55d185badeb32b3c766c9ab547495eac1b" ]
-  [ "reason.3.10.0"         "git+https://github.com/reasonml/reason.git#972261dab3b651ff8ab9b8b9fcc32940595073dc" ]
 ]
