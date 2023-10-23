@@ -18,7 +18,6 @@ depends: [
   "dune" {>= "3.8"}
   "melange" {>= "2.0.0"}
   "reason" {>= "3.10.0"}
-  "opam-check-npm-deps" {with-test} # todo: use with-dev-setup once opam 2.2 is out
   "ocaml-lsp-server" {with-test}
   "odoc" {with-doc}
 ]
