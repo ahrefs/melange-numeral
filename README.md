@@ -9,13 +9,13 @@ Install [opam](https://opam.ocaml.org/) package manager.
 
 Then:
 
-```
-opam pin add melange-numeral.dev git+https://github.com/ahrefs/melange-numeral.git#master
+```sh
+opam install melange-numeral
 ```
 
 The bindings support the version 2.0.6 of `numeral` npm package, which should be installed separately:
 
-```
+```json
   "dependencies": {
     "numeral": "2.0.6"
   }
@@ -25,7 +25,7 @@ The bindings support the version 2.0.6 of `numeral` npm package, which should be
 
 Add `melange-numeral` to the `libraries` in your `dune` file:
 
-```dune
+```lisp
 ; ...
   (libraries melange-numeral)
 ; ...
@@ -33,7 +33,7 @@ Add `melange-numeral` to the `libraries` in your `dune` file:
 
 # Usage Example
 
-```re
+```reason
 module N = Numeral;
 
 let myValue = N.make(`Str("11110.49"));
